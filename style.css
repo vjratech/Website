@@ -1,0 +1,85 @@
+:root {
+  --primary: #0bb3a6;
+  --dark: #0b2f2f;
+  --bg: #f5fefe;
+  --text: #123;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  background: linear-gradient(135deg, #0b2f2f, #0bb3a6);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.subtext {
+  max-width: 700px;
+  margin: 20px auto 0;
+  font-size: 16px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.section.dark {
+  background: var(--dark);
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section.dark .card {
+  background: #0f4444;
+  color: white;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #0b2f2f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
